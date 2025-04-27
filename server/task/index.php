@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             ]);
             $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            echo json_encode($tasks); // ✅ Respuesta válida
+            echo json_encode($tasks); // Respuesta válida
 
         } catch (PDOException $e) {
             echo json_encode(["error" => "Error en la conexión: " . $e->getMessage()]);

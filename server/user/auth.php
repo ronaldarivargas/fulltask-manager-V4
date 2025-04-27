@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($user)) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_name'] = $user['name'];
-        header('Location: /full-task-manager-V2_1/index.html');
+        header('Location: /fulltask-manager-V4/index.html');
         exit;
     } else {
         header('Location: login.php?error=1');
